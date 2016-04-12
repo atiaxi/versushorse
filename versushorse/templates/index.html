@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Versus Horse!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{url_for('root')}}">Versus Horse</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="{{url_for('about')}}" class="navbar-link">About</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <p class="lead">
+        Who would win in a battle versus a horse?  Now you can find out.
+    </p>
+    <div class="jumbotron">
+        <div class="text-center h2">
+            <form action="{{url_for('fight')}}" method="get">
+                <label>
+                    <input type="text" name="attacker">
+                    versus Horse
+                </label>
+                <p>
+                    <input type="submit" value="Fight!">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

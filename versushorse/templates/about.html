@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Versus Horse!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{url_for('root')}}">Versus Horse</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="{{url_for('about')}}" class="navbar-link">About</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+     <div class="panel">
+        <p class="lead">
+            <b>Versus Horse</b> is a website dedicated to answering that age-old
+            question:  If I had a horse fight something, would that horse win?
+        </p>
+
+         <h1>FAQ</h1>
+
+         <h2>...why?</h2>
+
+         <p>
+             If you're not dedicating at least 75% of your idle thoughts to
+             who would win in a horse fight, you're not truly living.
+         </p>
+
+         <h2>These winners seem entirely arbitrary!</h2>
+
+         <p>
+             They are!  We use the entirely arbirary but 100%
+             correct<super>*</super> SHAWIN
+             algorithm, wherein we compare the hash of the two combatants
+             to the hash of their combination.  The closest one wins!
+         </p>
+
+         <h2>That doesn't seem to incorporate fighting ability at all</h2>
+         <p>
+             We never said anything about fighting.
+         </p>
+
+         <h2>Yes you did, it's right up there before the FAQ header!</h2>
+
+         <p>
+             Listen, the SHA-512 algorithm is called that because it's at least
+             512 times smarter than us.  It's taking things into account that
+             you and I, as mere non-cryptographic mortals, can't even
+             comprehend.  So just go with it!
+         </p>
+
+        <h2>I wanted to know who would win in a fight between 'About' and
+        a horse.</h2>
+
+         <p>
+             <a href="{{url_for('fight', attacker='about')}}">You got it!</a>
+         </p>
+
+         <h2>What if I want to see who would win some other fight?</h2>
+
+         <p>I'm not sure I understand the question.</p>
+
+         <h2>You know, like if a bear fought a shark or something.</h2>
+
+         <p>
+             You'll need to petition ICANN to make <code>.shark</code> into
+             a top level domain.  Once that's done, we can re-implement the-
+         </p>
+
+         <h2>Wouldn't it be easier to just be able to fight anything?</h2>
+
+         <p>
+             Okay, fine, if you want to do it the "easier" way, we have an API:
+         </p>
+
+         <ul>
+             <li>
+                 <a href="{{url_for('api_compare', attacker='bear', attackee='shark')}}">{{url_for('api_compare', attacker='bear', attackee='shark')}}</a>
+             </li>
+             <li>
+                 <a href="{{url_for('api_compare', attacker='your favorite sports team', attackee='someone else')}}">{{url_for('api_compare', attacker='your favorite sports team', attackee='someone else')}}</a>
+             </li>
+             <li>
+                 <a href="{{url_for('api_compare', attacker='you', attackee='the inevitability of death')}}">{{url_for('api_compare', attacker='you', attackee='the inevitability of death')}}</a>
+             </li>
+         </ul>
+
+         <h2>What kind of insane madman would create this site?</h2>
+
+         My name's Roger Ostrander, and you can heap additional praise upon
+         me by writing to
+         <a href="mailto:atiaxi@gmail.com">atiaxi@gmail.com</a>.
+
+         <p>
+             <!-- I could have CSS add more space here but ehhhhh -->
+         </p>
+    <div class="text-center">
+        <a href="{{url_for('root')}}">More fights!</a>
+    </div>
+
+     <small>
+         <super>*</super>The SHAWIN algorithm is defined to be correct.
+         If it and reality disagree, reality is wrong.
+     </small>
+
+</div>
+
+</body>
+
+</html>

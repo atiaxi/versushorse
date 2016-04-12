@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stealth Bomber vs Pony!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{url_for('root')}}">Versus Horse</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="{{url_for('about')}}" class="navbar-link">About</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <p class="lead">
+        In the eternal battle between Stealth Bomber and Pony,
+        the victor is:
+    </p>
+    <div class="jumbotron">
+        <div class="text-center h1">
+            It's Complicated
+        </div>
+    </div>
+
+    <p class="lead">
+        The epic tale of the battle between the Stealth Bombers and Ponies
+        of the world is too rich and complex for a simple either-or answer
+        to do it justice.  The only way to truly find the answer to this
+        question is in the tale penned by none other than the author
+        of this very website:
+    </p>
+
+    <div class="text-center">
+        <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B01D59D3EM&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_sFXbxb0QZC366" ></iframe>
+    </div>
+
+    <br/>
+
+    <div class="text-center">
+        <a href="{{url_for('root')}}">More fights!</a> -
+        <a href="{{url_for('about')}}">Who decides this nonsense, anyway?</a>
+    </div>
+</div>
+</body>
+
+</html>
